@@ -106,7 +106,6 @@ void SlamGmapping::init()
 
 void SlamGmapping::startLiveSlam() 
 {
-  std::cout << "startLiveSlam()" << std::endl;
   entropy_publisher_ = this->create_publisher<std_msgs::msg::Float64>("entropy", rclcpp::SystemDefaultsQoS());
   sst_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map", rclcpp::SystemDefaultsQoS());
   sstm_ = this->create_publisher<nav_msgs::msg::MapMetaData>("map_metadata", rclcpp::SystemDefaultsQoS());
