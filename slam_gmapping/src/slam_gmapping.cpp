@@ -546,12 +546,3 @@ void SlamGmapping::publishTransform()
 
 #include "rclcpp_components/register_node_macro.hpp"
 RCLCPP_COMPONENTS_REGISTER_NODE(SlamGmapping)
-
-// int main(int argc, char* argv[])
-// {
-//     rclcpp::init(argc, argv);
-
-//     auto slam_gmapping_node = std::make_shared<SlamGmapping>();
-//     rclcpp::spin(slam_gmapping_node);
-//     return(0);
-// }
